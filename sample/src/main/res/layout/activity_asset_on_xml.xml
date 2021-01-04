@@ -15,7 +15,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btChange"
-        android:text="改变大小"/>
+        android:text="变小"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btChangeBig"
+        android:text="变大"/>
 
     <es.voghdev.pdfviewpager.RemotePDFLayout
         android:layout_width="match_parent"

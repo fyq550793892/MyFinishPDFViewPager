@@ -156,4 +156,9 @@ public class PDFPagerAdapter extends BasePDFPagerAdapter {
             return adapter;
         }
     }
+//    @Override
+//    public int getItemPosition(Object object) {
+//        // 最简单解决 notifyDataSetChanged() 页面不刷新问题的方法
+//        return POSITION_NONE;
+//    }
 }

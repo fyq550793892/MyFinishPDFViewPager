@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PdfViewPager-master.iml" filepath="$PROJECT_DIR$/.idea/modules/PdfViewPager-master.iml" group="PdfViewPager-master" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/library.iml" group="PdfViewPager-master/library" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/sample.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/sample.iml" group="PdfViewPager-master/sample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MyFinishPDFViewPager.iml" filepath="$PROJECT_DIR$/.idea/modules/MyFinishPDFViewPager.iml" group="MyFinishPDFViewPager" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/library.iml" group="MyFinishPDFViewPager/library" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/sample.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/sample.iml" group="MyFinishPDFViewPager/sample" />
     </modules>
   </component>
 </project>

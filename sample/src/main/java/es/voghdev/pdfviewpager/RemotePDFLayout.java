@@ -35,6 +35,7 @@ public class RemotePDFLayout extends FrameLayout implements DownloadFile.Listene
     private TextView showPageTv; // 显示到第几页view
     private ImageView previousPage; // 上页view
     private ImageView nextPage; // 下页view
+    private String myFileUrl;//文件URL
 
     private int jumpNum = 0;//这里只有跳转时才用
 
@@ -96,21 +97,22 @@ public class RemotePDFLayout extends FrameLayout implements DownloadFile.Listene
         });
     }
 
+
     public void loadPDF(String fileRemoteUrl, int pageNum) {
         /**
-         * @description
+         * @description 加载PDF
          * @param [fileRemoteUrl, pageNum] 这里传的为远程地址    要跳转到的页数
          * @return void
          * @author yuqingfan
          * @time 2020/12/25 16:19
          */
 
-        //如果改变了view大小，调用load来重新加载
         jumpNum = pageNum - 1;
 
         final Context ctx = mContext;
         final DownloadFile.Listener listener = this;
         remotePDFViewPager = new RemotePDFViewPager(ctx, fileRemoteUrl, listener);
+
         remotePDFViewPager.setId(R.id.pdfViewPager);
         remotePDFViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -145,21 +147,49 @@ public class RemotePDFLayout extends FrameLayout implements DownloadFile.Listene
 
     }
 
+    //获取当前页
     public int getCurrentNumPage() {
         if (remotePDFViewPager != null) {
-            return remotePDFViewPager.getCurrentItem();
+            return remotePDFViewPager.getCurrentItem() + 1;
         }else {
             return 0;
         }
 
     }
 
+    //获取总页数
+    public int getSumNumPage() {
+        return adapter == null ? 0 : adapter.getCount();
+    }
+
+
+    public void refreshCurrentViewPager() {
+        /**
+         * @description 刷新当前页===用作View大小改变时调用
+         * @param
+         * @return
+         * @author yuqingfan
+         * @time 2021/1/4 17:40
+         */
+        if (myFileUrl != null) {
+            int jumpPage = getCurrentNumPage();
+            adapter = new PDFPagerAdapter(mContext, FileUtil.extractFileNameFromURL(myFileUrl));
+            remotePDFViewPager.setAdapter(adapter);
+            remotePDFViewPager.setCurrentItem(jumpPage - 1);
+            if (remotePDFViewPager != null && adapter != null) {
+                showPageTv.setText(remotePDFViewPager.getCurrentItem() + 1 + "/" + adapter.getCount());
+                Log.d(TAG, "onSuccess:页数为： " + remotePDFViewPager.getCurrentItem() + "总页数" + adapter.getCount());
+            }
+        }
+    }
+
     @Override
     public void onSuccess(String url, String destinationPath) {
+        myFileUrl = url;
         adapter = new PDFPagerAdapter(mContext, FileUtil.extractFileNameFromURL(url));
         remotePDFViewPager.setAdapter(adapter);
         if (jumpNum > adapter.getCount()) {
-            jumpNum = 0;
+            jumpNum = adapter.getCount();
         }
         if (jumpNum < 0) {
             jumpNum = 0;
@@ -196,5 +226,7 @@ public class RemotePDFLayout extends FrameLayout implements DownloadFile.Listene
         jumpNum = 0;
         removeAllViews();
     }
+
+
 
 }
