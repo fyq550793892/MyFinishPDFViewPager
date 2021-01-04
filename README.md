@@ -1,3 +1,5 @@
+1、加入翻页按钮
+
 # PdfViewPager
 
 [![Download](https://api.bintray.com/packages/voghdev/maven/pdfviewpager/images/download.svg) ](https://bintray.com/voghdev/maven/pdfviewpager/_latestVersion)
