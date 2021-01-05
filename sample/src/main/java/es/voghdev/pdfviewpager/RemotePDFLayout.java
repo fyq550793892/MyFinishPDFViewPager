@@ -113,7 +113,7 @@ public class RemotePDFLayout extends FrameLayout implements DownloadFile.Listene
         final DownloadFile.Listener listener = this;
         remotePDFViewPager = new RemotePDFViewPager(ctx, fileRemoteUrl, listener);
 
-        remotePDFViewPager.setId(R.id.pdfViewPager);
+        //remotePDFViewPager.setId(R.id.pdfViewPager);
         remotePDFViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {

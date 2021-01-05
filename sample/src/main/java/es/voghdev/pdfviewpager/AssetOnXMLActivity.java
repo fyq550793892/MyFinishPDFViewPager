@@ -44,13 +44,12 @@ public class AssetOnXMLActivity extends BaseSampleActivity {
         btChange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                LinearLayout.LayoutParams linearParams = (LinearLayout.LayoutParams) remotePDFLayout.getLayoutParams();
-//                linearParams.height = 400;
-//                linearParams.width = 500;
-//                remotePDFLayout.setLayoutParams(linearParams);
-//                Log.d(TAG, "onClick: 当前页数" + remotePDFLayout.getCurrentNumPage() );
-//                //remotePDFLayout.loadPDF("https://lec-t-bh.oss-cn-beijing.aliyuncs.com//2020/11/26/doc/db2f387c-1e06-4ed0-9676-62e0a7388d91_trans.pdf",remotePDFLayout.getCurrentNumPage());
-//                remotePDFLayout.refreshCurrentViewPager();
+                LinearLayout.LayoutParams linearParams = (LinearLayout.LayoutParams) remotePDFLayout.getLayoutParams();
+                linearParams.height = 400;
+                linearParams.width = 500;
+                remotePDFLayout.setLayoutParams(linearParams);
+                Log.d(TAG, "onClick: 当前页数" + remotePDFLayout.getCurrentNumPage() );
+                remotePDFLayout.refreshCurrentViewPager();
 
 
 
@@ -65,7 +64,6 @@ public class AssetOnXMLActivity extends BaseSampleActivity {
                 remotePDFLayout.setLayoutParams(linearParams);
                 Log.d(TAG, "onClick: 总页数" + remotePDFLayout.getSumNumPage() );
                 Log.d(TAG, "onClick: 当前页数" + remotePDFLayout.getCurrentNumPage() );
-                //remotePDFLayout.loadPDF("https://lec-t-bh.oss-cn-beijing.aliyuncs.com//2020/11/26/doc/db2f387c-1e06-4ed0-9676-62e0a7388d91_trans.pdf",remotePDFLayout.getCurrentNumPage());
                 remotePDFLayout.refreshCurrentViewPager();
             }
         });

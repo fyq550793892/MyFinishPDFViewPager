@@ -22,6 +22,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 
+
 import androidx.viewpager.widget.ViewPager;
 
 import java.io.File;
