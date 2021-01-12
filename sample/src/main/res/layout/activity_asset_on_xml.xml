@@ -9,20 +9,23 @@
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:text="This is a PDF, set up in XML file"
         />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btChange"
+        android:visibility="gone"
         android:text="变小"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btChangeBig"
+        android:visibility="gone"
         android:text="变大"/>
 
-    <es.voghdev.pdfviewpager.SDCardPDFLayout
+    <es.voghdev.pdfviewpager.RemotePDFLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/remotePDFLayout"/>

@@ -18,6 +18,7 @@ package es.voghdev.pdfviewpager.library.adapter;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.pdf.PdfRenderer;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -29,7 +30,7 @@ import es.voghdev.pdfviewpager.library.subscaleview.SubsamplingScaleImageView;
 import es.voghdev.pdfviewpager.library.util.EmptyClickListener;
 
 public class PDFPagerAdapter extends BasePDFPagerAdapter {
-
+    private static final String TAG = "PDFPagerAdapter";
     private static final float DEFAULT_SCALE = 1f;
 
     PdfScale scale = new PdfScale();

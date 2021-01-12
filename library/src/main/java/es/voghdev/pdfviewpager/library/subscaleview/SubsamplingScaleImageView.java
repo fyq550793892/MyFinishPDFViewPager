@@ -484,6 +484,7 @@ public class SubsamplingScaleImageView extends View {
         boolean resizeHeight = heightSpecMode != MeasureSpec.EXACTLY;
         int width = parentWidth;
         int height = parentHeight;
+        Log.d(TAG, "onMeasure: " + sWidth + "/t:" + sHeight + "/t 父布局： " + width + "/t:" + height);
         if (sWidth > 0 && sHeight > 0) {
             if (resizeWidth && resizeHeight) {
                 width = sWidth();
