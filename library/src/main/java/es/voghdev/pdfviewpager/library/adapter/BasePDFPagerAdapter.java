@@ -36,6 +36,7 @@ import java.net.URI;
 import es.voghdev.pdfviewpager.library.R;
 
 public class BasePDFPagerAdapter extends PagerAdapter {
+    private static final String TAG = "BasePDFPagerAdapter";
     protected static final int FIRST_PAGE = 0;
     protected static final float DEFAULT_QUALITY = 2.0f;
     protected static final int DEFAULT_OFFSCREENSIZE = 1;
@@ -115,7 +116,7 @@ public class BasePDFPagerAdapter extends PagerAdapter {
         ParcelFileDescriptor parcelFileDescriptor;
 
         File pdfCopy = new File(path);
-
+        Log.d(TAG, "getSeekableFileDescriptor: " + pdfCopy.exists());
         if (pdfCopy.exists()) {
             parcelFileDescriptor = ParcelFileDescriptor.open(pdfCopy, ParcelFileDescriptor.MODE_READ_ONLY);
             return parcelFileDescriptor;

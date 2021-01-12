@@ -26,7 +26,7 @@ import es.voghdev.pdfviewpager.library.PDFViewPager;
 import es.voghdev.pdfviewpager.library.adapter.BasePDFPagerAdapter;
 
 public class AssetOnXMLActivity extends BaseSampleActivity {
-    RemotePDFLayout remotePDFLayout;
+    SDCardPDFLayout remotePDFLayout;
     Button btChange;
     Button btChangeBig;
     private static final String TAG = "AssetOnXMLActivity";
@@ -39,7 +39,8 @@ public class AssetOnXMLActivity extends BaseSampleActivity {
         btChangeBig = findViewById(R.id.btChangeBig);
         //pdfViewPager = findViewById(R.id.pdfViewPager);
         remotePDFLayout = findViewById(R.id.remotePDFLayout);
-        remotePDFLayout.loadPDF("https://lec-t-bh.oss-cn-beijing.aliyuncs.com//2020/11/26/doc/db2f387c-1e06-4ed0-9676-62e0a7388d91_trans.pdf",10);
+        remotePDFLayout.loadPDF("/mnt/sdcard/EasyCloud/学记.pdf",11);
+
 
         btChange.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -21,7 +21,7 @@
 13-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:9:22-77
 14
 15    <application
-15-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:11:5-41:19
+15-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:11:5-48:19
 16        android:name="es.voghdev.pdfviewpager.SampleApplication"
 16-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:12:9-42
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -38,61 +38,69 @@
 23-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:16:13-45
 24            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" >
 24-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:17:13-76
-25            <intent-filter>
-25-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:18:13-21:29
-26                <action android:name="android.intent.action.MAIN" />
-26-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:19:17-69
-26-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:19:25-66
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:20:17-77
-28-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:20:27-74
-29            </intent-filter>
+25
+26            <!-- <intent-filter> -->
+27            <!-- <action android:name="android.intent.action.MAIN" /> -->
+28            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+29            <!-- </intent-filter> -->
 30        </activity>
 31        <activity
-31-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:23:9-25:79
+31-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:23:9-32:20
 32            android:name="es.voghdev.pdfviewpager.AssetOnXMLActivity"
 32-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:24:13-47
-33            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
-33-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:25:13-76
-34        <activity
-34-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:26:9-28:79
-35            android:name="es.voghdev.pdfviewpager.AssetOnSDActivity"
-35-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:27:13-46
-36            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
-36-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:28:13-76
-37        <activity
-37-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:29:9-31:79
-38            android:name="es.voghdev.pdfviewpager.RemotePDFActivity"
-38-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:30:13-46
-39            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
-39-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:31:13-76
-40        <activity
-40-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:32:9-34:79
-41            android:name="es.voghdev.pdfviewpager.ZoomablePDFActivityPhotoView"
-41-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:33:13-57
-42            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
-42-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:34:13-76
-43        <activity
-43-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:35:9-37:79
-44            android:name="es.voghdev.pdfviewpager.PDFWithScaleActivity"
-44-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:36:13-49
-45            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
-45-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:37:13-76
-46        <activity
-46-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:38:9-40:79
-47            android:name="es.voghdev.pdfviewpager.InvalidPdfActivity"
-47-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:39:13-47
-48            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
-48-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:40:13-76
-49
-50        <service
-50-->[:library] /Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/library/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:19
-51            android:name="es.voghdev.pdfviewpager.library.service.CopyAssetService"
-51-->[:library] /Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/library/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-84
-52            android:exported="false" >
-52-->[:library] /Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/library/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
-53        </service>
-54    </application>
-55
-56</manifest>
+33            android:label="@string/app_name"
+33-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:25:13-45
+34            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" >
+34-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:26:13-76
+35            <intent-filter>
+35-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:27:13-30:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:28:17-69
+36-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:28:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:29:17-77
+38-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:29:27-74
+39            </intent-filter>
+40        </activity>
+41        <activity
+41-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:33:9-35:79
+42            android:name="es.voghdev.pdfviewpager.AssetOnSDActivity"
+42-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:34:13-46
+43            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
+43-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:35:13-76
+44        <activity
+44-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:36:9-38:79
+45            android:name="es.voghdev.pdfviewpager.RemotePDFActivity"
+45-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:37:13-46
+46            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
+46-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:38:13-76
+47        <activity
+47-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:39:9-41:79
+48            android:name="es.voghdev.pdfviewpager.ZoomablePDFActivityPhotoView"
+48-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:40:13-57
+49            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
+49-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:41:13-76
+50        <activity
+50-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:42:9-44:79
+51            android:name="es.voghdev.pdfviewpager.PDFWithScaleActivity"
+51-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:43:13-49
+52            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
+52-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:44:13-76
+53        <activity
+53-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:45:9-47:79
+54            android:name="es.voghdev.pdfviewpager.InvalidPdfActivity"
+54-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:46:13-47
+55            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
+55-->/Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/sample/src/main/AndroidManifest.xml:47:13-76
+56
+57        <service
+57-->[:library] /Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/library/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:19
+58            android:name="es.voghdev.pdfviewpager.library.service.CopyAssetService"
+58-->[:library] /Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/library/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-84
+59            android:exported="false" >
+59-->[:library] /Users/fyq/Desktop/公共项目/MyFinishPDFViewPager/library/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+60        </service>
+61    </application>
+62
+63</manifest>

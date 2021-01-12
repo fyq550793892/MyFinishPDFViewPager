@@ -16,6 +16,7 @@
 package es.voghdev.pdfviewpager.library.util;
 
 import android.content.Context;
+import android.util.Log;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -24,6 +25,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class FileUtil {
+    private static final String TAG = "FileUtil";
     public static boolean copyAsset(Context ctx, String assetName, String destinationPath) throws IOException {
         InputStream in = ctx.getAssets().open(assetName);
         File f = new File(destinationPath);
@@ -42,6 +44,7 @@ public class FileUtil {
     }
 
     public static String extractFileNameFromURL(String url) {
+        Log.d(TAG, "extractFileNameFromURL: " + url.substring(url.lastIndexOf('/') + 1));
         return url.substring(url.lastIndexOf('/') + 1);
     }
 }
